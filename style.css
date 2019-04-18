@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+html, body {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #44a0c8;
+    border-bottom: 1px dotted currentColor;
+}
+    a:hover { border-bottom-style: solid; }
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    max-width: 800px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}

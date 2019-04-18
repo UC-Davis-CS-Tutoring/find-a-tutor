@@ -55,7 +55,7 @@ function listUpcomingEvents() {
                 var event_date = when.format("dddd, MMMM Do");
                 if (last_date != event_date) {
                     last_date = event_date;
-                    var new_header = document.createElement("h1");
+                    var new_header = document.createElement("h2");
                     new_header.textContent = event_date;
                     document.body.appendChild(new_header);
                     last_ul = document.createElement("ul");
