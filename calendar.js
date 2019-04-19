@@ -33,18 +33,16 @@ function listUpcomingEvents() {
         "singleEvents": true,
         "maxResults": 250,
         "orderBy": "startTime",
-        "q": " 20"
     }).then(function(response) {
         var events = response.result.items;
 
         var last_date = "";
         var last_ul;
-        console.log('Upcoming events:');
 
         if (events.length > 0) {
             for (i = 0; i < events.length; i++) {
                 var event = events[i];
-                if (event.summary.indexOf(" 20") == -1) {
+                if (event.summary.match(" " + window.course_number + "[ABC]*" + window.course_letter) == null) {
                     continue;
                 }
                 var when = moment(event.start.dateTime);
